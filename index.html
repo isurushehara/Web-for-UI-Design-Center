@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
+    <title>Few — Modern CSS-Only Animated Website</title>
+    <meta name="description"
+        content="A modern, animated, responsive website built with pure HTML and CSS. No JavaScript." />
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+    <div class="grain" aria-hidden="true"></div>
+
+    <a href="#main" class="btn chip"
+        style="position: absolute; left: -999px; top: auto; width: 1px; height: 1px; overflow: hidden;"
+        onfocus="this.style.position='fixed'; this.style.left='12px'; this.style.top='12px';"
+        onblur="this.style.position='absolute'; this.style.left='-999px';">Skip to content</a>
+
+    <header class="site-header">
+        <div class="header-inner container">
+            <a class="brand" href="#home" aria-label="Nova Home">
+                <span class="brand-badge" aria-hidden="true"></span>
+                FEW<span style="opacity:.7">UI</span>
+            </a>
+
+            <input type="checkbox" id="nav-toggle" aria-hidden="true" />
+            <nav class="nav" id="nav" aria-label="Primary">
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#showcase">Showcase</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="nav-cta">
+                <a class="btn secondary wget" href="#pricing">Get Started</a>
+                <a class="btn wcontact" href="#contact">Contact Sales</a>
+            </div>
+
+            <label class="burger" for="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+            </label>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <!-- Hero -->
+        <section id="home" class="hero section container">
+            <div class="hero-bg" aria-hidden="true"></div>
+            <div class="orbs" aria-hidden="true">
+                <div class="orb one"></div>
+                <div class="orb two"></div>
+            </div>
+
+            <div class="split">
+                <div>
+                    <span class="eyebrow">✨ CSS-only animations</span>
+                    <h1>Build delightful, modern websites without JavaScript.</h1>
+                    <p>
+                        FewUI is a sleek, accessible, responsive template using only HTML & CSS.
+                        Animated gradients, glassmorphism, hover effects, and more - all powered by CSS.
+                    </p>
+                    <div class="cta">
+                        <a class="btn" href="#features">Explore Features</a>
+                        <a class="btn secondary" href="#showcase">View Showcase</a>
+                    </div>
+                </div>
+
+                <div aria-hidden="true">
+                    <!-- Decorative mockup card -->
+                    <div class="card" style="padding:0; border-radius: 22px; overflow: hidden;">
+                        <div style="aspect-ratio: 16/10; background:
+              radial-gradient(800px 600px at 0% 0%, hsl(268 100% 66% / .45), transparent 60%),
+              radial-gradient(800px 600px at 100% 0%, hsl(199 100% 66% / .45), transparent 60%),
+              linear-gradient(135deg, hsl(240 12% 12%), hsl(240 10% 10%));
+              position: relative;">
+                            <div style="position: absolute; inset: 0; display: grid; place-items: center;">
+                                <div style="display:grid; gap:10px; width:min(90%,480px);">
+                                    <div
+                                        style="height:42px; border-radius:12px; background:hsl(0 0% 100% / .10); border:1px solid hsl(0 0% 100% / .12)">
+                                    </div>
+                                    <div style="height:16px; border-radius:8px; background:hsl(0 0% 100% / .10)"></div>
+                                    <div
+                                        style="height:16px; border-radius:8px; background:hsl(0 0% 100% / .08); width:80%">
+                                    </div>
+                                    <div
+                                        style="display:grid; grid-template-columns: repeat(3,1fr); gap:8px; margin-top:6px;">
+                                        <div
+                                            style="height:90px; border-radius:14px; background:linear-gradient(135deg, hsl(0 0% 100% / .12), hsl(0 0% 100% / .06))">
+                                        </div>
+                                        <div
+                                            style="height:90px; border-radius:14px; background:linear-gradient(135deg, hsl(0 0% 100% / .12), hsl(0 0% 100% / .06))">
+                                        </div>
+                                        <div
+                                            style="height:90px; border-radius:14px; background:linear-gradient(135deg, hsl(0 0% 100% / .12), hsl(0 0% 100% / .06))">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="color:var(--muted); margin-top:10px; text-align:center">Glassmorphic UI preview</p>
+                </div>
+            </div>
+
+            <div class="scroll-indicator" aria-hidden="true">
+                <div class="mouse"></div>
+                <small>Scroll</small>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section id="features" class="features section container">
+            <div class="section-head">
+                <h2>Everything you need to launch faster</h2>
+                <p>Responsive grid, animated visuals, accessible components, and tasteful motion - crafted with modern
+                    CSS.</p>
+            </div>
+
+            <div class="feature-grid">
+                <article class="card">
+                    <div class="icon">⚡</div>
+                    <h3>Zero JS</h3>
+                    <p>Fully interactive with HTML & CSS only—fast to load, easy to maintain.</p>
+                </article>
+                <article class="card">
+                    <div class="icon">🎨</div>
+                    <h3>Animated Gradients</h3>
+                    <p>Subtle motion with conic and radial gradients that bring life to the page.</p>
+                </article>
+                <article class="card">
+                    <div class="icon">📱</div>
+                    <h3>Responsive</h3>
+                    <p>Layouts adapt beautifully across phones, tablets, and desktops.</p>
+                </article>
+                <article class="card">
+                    <div class="icon">🧊</div>
+                    <h3>Glassmorphism</h3>
+                    <p>Frosted panels and soft shadows for a premium, modern aesthetic.</p>
+                </article>
+                <article class="card">
+                    <div class="icon">♿</div>
+                    <h3>Accessible</h3>
+                    <p>Semantic HTML, proper contrast, focus states, and reduced-motion support.</p>
+                </article>
+                <article class="card">
+                    <div class="icon">🧩</div>
+                    <h3>Reusable</h3>
+                    <p>Cards, buttons, grids, and sections you can repurpose quickly.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Showcase -->
+        <section id="showcase" class="showcase section container">
+            <div class="section-head">
+                <h2>Showcase</h2>
+                <p>A fluid masonry grid with hover effects. Replace images with your own.</p>
+            </div>
+
+            <div class="masonry">
+                <figure class="shot" style="margin-top: 0;">
+                    <img src="https://images.unsplash.com/photo-1435575653489-b0873ec954e2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Futuristic architecture" />
+                    <figcaption class="tag">Architecture</figcaption>
+                </figure>
+                <figure class="shot">
+                    <img src="https://images.unsplash.com/photo-1755398104003-67d116e62f38?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Colorful abstract gradient" />
+                    <figcaption class="tag">Gradient</figcaption>
+                </figure>
+                <figure class="shot">
+                    <img src="https://images.unsplash.com/photo-1593062096033-9a26b09da705?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Minimal workstation with laptop" />
+                    <figcaption class="tag">Workspace</figcaption>
+                </figure>
+                <figure class="shot">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1400&auto=format&fit=crop"
+                        alt="Code editor on screen" />
+                    <figcaption class="tag">Code</figcaption>
+                </figure>
+                <figure class="shot">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop"
+                        alt="Team collaborating" />
+                    <figcaption class="tag">Team</figcaption>
+                </figure>
+                <figure class="shot">
+                    <img src="https://plus.unsplash.com/premium_photo-1661909976446-3d686365b6f2?q=80&w=1219&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Vibrant neon lights" />
+                    <figcaption class="tag">Neon</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Pricing -->
+        <section id="pricing" class="pricing section container">
+            <div class="section-head">
+                <h2>Simple, transparent pricing</h2>
+                <p>No surprises. Choose the plan that fits and upgrade any time.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="tier">
+                    <span class="badge">Starter</span>
+                    <div class="price">$0 <small>/ forever</small></div>
+                    <ul class="features-list">
+                        <li>Core components</li>
+                        <li>Responsive layout</li>
+                        <li>Basic support</li>
+                    </ul>
+                    <div><a class="btn secondary" href="#">Get Starter</a></div>
+                </div>
+
+                <div class="tier popular">
+                    <span class="badge">Popular</span>
+                    <div class="price">$29 <small>/ month</small></div>
+                    <ul class="features-list">
+                        <li>Everything in Starter</li>
+                        <li>Showcase gallery</li>
+                        <li>Priority support</li>
+                    </ul>
+                    <div><a class="btn" href="#">Choose Pro</a></div>
+                </div>
+
+                <div class="tier">
+                    <span class="badge">Business</span>
+                    <div class="price">$99 <small>/ month</small></div>
+                    <ul class="features-list">
+                        <li>Everything in Pro</li>
+                        <li>Custom branding</li>
+                        <li>Dedicated success</li>
+                    </ul>
+                    <div><a class="btn secondary" href="#">Contact Sales</a></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="faq section container">
+            <div class="section-head">
+                <h2>Frequently asked questions</h2>
+                <p>Built-in details/summary means no JS needed for accordions.</p>
+            </div>
+
+            <details>
+                <summary><span class="chev">›</span> Can I use this template commercially?</summary>
+                <p>Yes. It’s a starter you can adapt and ship for client or personal projects.</p>
+            </details>
+            <details>
+                <summary><span class="chev">›</span> How do I change the colors?</summary>
+                <p>Edit CSS variables in :root (primary, secondary, accent) to theme quickly. Light/dark adapts
+                    automatically via prefers-color-scheme.</p>
+            </details>
+            <details>
+                <summary><span class="chev">›</span> Will it work without JavaScript?</summary>
+                <p>Absolutely. All animations and interactions here are HTML/CSS only, including the mobile navigation.
+                </p>
+            </details>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="contact section container">
+            <div class="grid-2">
+                <div class="panel">
+                    <h2>Let’s build something great</h2>
+                    <p style="color:var(--muted); margin-top:6px">Drop a line and we’ll get back to you. This is a
+                        static form - connect it to your backend or a form service to receive submissions.</p>
+                    <form action="#" method="post" style="margin-top:16px">
+                        <div class="field">
+                            <label for="name">Name</label>
+                            <input id="name" name="name" type="text" placeholder="Your name" required />
+                        </div>
+                        <div class="field" style="margin-top:10px">
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+                        </div>
+                        <div class="field" style="margin-top:10px">
+                            <label for="msg">Message</label>
+                            <textarea id="msg" name="message" rows="5"
+                                placeholder="Tell us about your project"></textarea>
+                        </div>
+                        <div style="margin-top:14px">
+                            <button class="btn" type="submit">Send message</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="panel">
+                    <h3>Contact info</h3>
+                    <p style="color:var(--muted); margin-top:6px">
+                        Email: hello@fewui.com<br />
+                        Address: 123 Few Street, CSS City
+                    </p>
+                    <div style="display:grid; gap:10px; margin-top:16px;">
+                        <div class="card" style="display:flex; align-items:center; gap:12px;">
+                            <span class="icon" aria-hidden="true">🕒</span>
+                            <div>
+                                <strong>Hours</strong>
+                                <div style="color:var(--muted)">Mon–Fri · 9am–6pm</div>
+                            </div>
+                        </div>
+                        <div class="card" style="display:flex; align-items:center; gap:12px;">
+                            <span class="icon" aria-hidden="true">🛡️</span>
+                            <div>
+                                <strong>Privacy-first</strong>
+                                <div style="color:var(--muted)">We don’t track or fingerprint visitors.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner container">
+            <div>© <span id="year">2025</span> FewUI. All rights reserved.</div>
+            <div class="social" aria-label="Social links">
+                <a href="#" aria-label="Twitter">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path
+                            d="M22.46 6c-.77.35-1.6.59-2.46.7a4.28 4.28 0 0 0 1.88-2.36 8.42 8.42 0 0 1-2.7 1.03 4.23 4.23 0 0 0-7.2 3.86A12 12 0 0 1 3.16 4.9a4.22 4.22 0 0 0 1.31 5.64 4.2 4.2 0 0 1-1.92-.53v.05a4.23 4.23 0 0 0 3.39 4.14c-.47.13-.96.2-1.47.07a4.24 4.24 0 0 0 3.95 2.93 8.49 8.49 0 0 1-5.26 1.82c-.34 0-.68-.02-1.01-.06a11.96 11.96 0 0 0 6.48 1.9c7.78 0 12.04-6.44 12.04-12.03 0-.18-.01-.36-.02-.54A8.56 8.56 0 0 0 24 5.3a8.38 8.38 0 0 1-2.39.66Z" />
+                    </svg>
+                </a>
+                <a href="#" aria-label="GitHub">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path
+                            d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.77.6-3.36-1.17-3.36-1.17-.46-1.17-1.13-1.48-1.13-1.48-.92-.63.07-.62.07-.62 1.02.07 1.56 1.06 1.56 1.06.9 1.55 2.36 1.1 2.94.84.09-.65.35-1.09.64-1.34-2.22-.25-4.55-1.11-4.55-4.95 0-1.1.39-2 .1-2.7 0 0 .84-.27 2.75 1.03A9.6 9.6 0 0 1 12 7.5c.85 0 1.7.11 2.5.33 1.9-1.3 2.73-1.03 2.73-1.03.3.7.11 1.6.1 2.7 0 3.85-2.33 4.69-4.55 4.94.36.31.69.92.69 1.86v2.75c0 .27.18.58.68.48A10 10 0 0 0 12 2Z" />
+                    </svg>
+                </a>
+                <a href="#" aria-label="Dribbble">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path
+                            d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2Zm6.92 6.39a8.1 8.1 0 0 1 1.02 3.9c-1.11-.24-2.7-.43-4.22-.2-.08-.2-.15-.4-.25-.6-.18-.4-.4-.8-.62-1.22 2.1-.9 3.53-2 4.07-1.88ZM12 3.83c1.86 0 3.56.67 4.88 1.77-.48.7-1.84 1.7-3.8 2.47A29 29 0 0 0 11 4.3c.32-.03.65-.05 1-.05ZM9.4 4.6c.45.73 1.25 2.12 2.02 3.9-2.55.74-5.59.95-7.66.98A8.17 8.17 0 0 1 9.4 4.6Zm-5.7 7.6v-.28c2.39.02 6.22-.16 9.2-1.2.23.45.44.9.63 1.32l.02.04c-2.51.73-4.6 2.3-6.2 4.57a8.17 8.17 0 0 1-3.65-4.45Zm8.3 8.15a8.13 8.13 0 0 1-4.1-1.1c1.4-2 3.24-3.43 5.48-4.08.46 1.2.83 2.43 1.12 3.63-.83.4-1.72.6-2.5.6Zm3.74-1.52c-.24-1.03-.57-2.13-.98-3.23 1.3-.16 2.77-.07 4.67.29a8.18 8.18 0 0 1-3.69 2.94Z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
